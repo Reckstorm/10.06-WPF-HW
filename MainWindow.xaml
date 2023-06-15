@@ -1,0 +1,186 @@
+﻿<Window x:Class="_10._06_HW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10._06_HW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="505" Width="900">
+    <Grid Background="{StaticResource globalBG}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition MaxHeight="25"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Background="#FFE00986" Grid.RowSpan="2" Margin="15 10 2.5 10">
+                    <Label Content="11" FontSize="35" Foreground="White" VerticalContentAlignment="Center"></Label>
+                </Grid>
+                <Label Grid.Column="1" Content="Eleven" FontSize="20" Foreground="White"></Label>
+                <Grid Grid.Row="1" Grid.Column="1" Margin="0 0 0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="change" Background="#FF737370" Foreground="White" Padding="2.5" Margin="0 0 2.5 0"></Button>
+                    <Grid Grid.Column="1" Background="White" Margin="0 0 2.5 0">
+                        <Image Source="icons/reload.png" MaxHeight="15" Margin="5"></Image>
+                    </Grid>
+                    <Label Grid.Column="2" Content="Eleven" Foreground="White" FontSize="10" VerticalAlignment="Bottom"></Label>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1" Margin="5 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Background="{StaticResource menuBG}" Margin="10 0 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image Source="icons/cash.png" Style="{StaticResource menuImgStyle}"></Image>
+                    <Label Grid.Column="1" Content="0 Products&#10;0 Visits&#10;0 Memberships&#10;0 Vouchers&#10;0 Total" Style="{StaticResource menuLabelStyleGen}"></Label>
+                    <Label Grid.Row="1" Content="Point of sale" Style="{StaticResource menuLabelStyle}"></Label>
+                    <Label Grid.Row="1" Grid.Column="1" Content="$ 0.00" Style="{StaticResource menuLabelPriceStyle}"></Label>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Background="{StaticResource menuBG}" Margin="{StaticResource gridMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Source="icons/men.png" Style="{StaticResource menuImgStyle}"></Image>
+                        <Label Content="Clients" Style="{StaticResource menuLabelStyle}" Grid.Row="1" VerticalAlignment="Bottom"></Label>
+                    </Grid>
+                    <Grid Background="{StaticResource menuBG}" Grid.Column="1" Margin="{StaticResource gridMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Source="icons/bill.png" Margin="{StaticResource gridMargin}"></Image>
+                        <Label Content="Expenses" Style="{StaticResource menuLabelStyle}" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Background="{StaticResource menuBG}" Margin="{StaticResource gridMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Source="icons/truck.png" Margin="{StaticResource gridMargin}"></Image>
+                        <Label Content="Restocking" Style="{StaticResource menuLabelStyle}" Grid.Row="1"></Label>
+                    </Grid>
+                    <Grid Background="{StaticResource menuBG}" Grid.Column="1" Margin="{StaticResource gridMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Source="icons/schedule.png" Margin="{StaticResource gridMargin}"></Image>
+                        <Label Content="Schedule" Style="{StaticResource menuLabelStyle}" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Background="{StaticResource menuBG}" Margin="{StaticResource gridMargin}">
+                            <Image Source="icons/id.png" Style="{StaticResource menuImgStyleSmall}"></Image>
+                        </Grid>
+                        <Grid Grid.Column="1" Background="{StaticResource menuBG}" Margin="{StaticResource gridMargin}">
+                            <Image Source="icons/can.png" Style="{StaticResource menuImgStyleSmall}" Grid.Column="1"></Image>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Background="{StaticResource menuBG}" Margin="{StaticResource gridMargin}">
+                            <Image Source="icons/chart.png" Style="{StaticResource menuImgStyleSmall}"></Image>
+                        </Grid>
+                        <Grid Grid.Column="1" Background="{StaticResource menuBG}" Margin="{StaticResource gridMargin}">
+                            <Image Source="icons/gear.png" Style="{StaticResource menuImgStyleSmall}" Grid.Column="1"></Image>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Margin="5 5 15 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid HorizontalAlignment="Right" Margin="{StaticResource gridMargin}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="icons/faq.png" Style="{StaticResource topImg}"></Image>
+                <Image Source="icons/clock.png" Style="{StaticResource topImg}" Grid.Column="1"></Image>
+                <Image Source="icons/profile.png" Style="{StaticResource topImg}" Grid.Column="4"></Image>
+
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Foreground="#FF7FC3FF" Content="00:00:00" FontSize="15" VerticalAlignment="Bottom"></Label>
+                    <Button Grid.Row="1" Background="#FF737373" Foreground="White" Content="start"></Button>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Foreground="#FF8C8C8C" Content="GymRealm" FontSize="15" VerticalAlignment="Bottom"></Label>
+                    <Button Grid.Row="1" Background="#FFDA797F" Foreground="White" Content="logout" Margin="2.5 0 15 0"></Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1" Background="{StaticResource contentBG}" Margin="5 10 0 0"></Grid>
+        </Grid>
+        <Label Foreground="#FF939393" Content="Time: 9/21/2016 2:21 PM 1.0.0.1903 AZURE ONLINE" Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Right" Margin="0 0 15 0"></Label>
+    </Grid>
+</Window>

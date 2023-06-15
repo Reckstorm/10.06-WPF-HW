@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:_10._06_HW">
+
+    <SolidColorBrush x:Key="globalBG" Color="#FF444444"></SolidColorBrush>
+    <SolidColorBrush x:Key="menuBG" Color="#FF3799AD"></SolidColorBrush>
+    <SolidColorBrush x:Key="contentBG" Color="#FF7ABACA"></SolidColorBrush>
+
+    <Thickness x:Key="gridGlobalMargin" Left="20" Top="20" Right="20" Bottom="20"></Thickness>
+    <Thickness x:Key="gridMargin" Left="10" Top="10" Right="0" Bottom="0"></Thickness>
+    <Thickness x:Key="imgMargin" Left="10" Top="10" Right="10" Bottom="10"></Thickness>
+    <Style x:Key="menuImgStyle" TargetType="Image">
+        <Setter Property="Margin" Value="10,10,10,0"></Setter>
+        <Setter Property="MaxHeight" Value="100"></Setter>
+    </Style>
+    <Style x:Key="menuImgStyleSmall" TargetType="Image" BasedOn="{StaticResource menuImgStyle}">
+        <Setter Property="Margin" Value="5,5,5,5"></Setter>
+        <Setter Property="MaxHeight" Value="25"></Setter>
+    </Style>
+    <Style x:Key="menuLabelStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="12"></Setter>
+        <Setter Property="FontWeight" Value="bold"></Setter>
+        <Setter Property="Foreground" Value="White"></Setter>
+    </Style>
+    <Style x:Key="menuLabelStyleGen" TargetType="Label" BasedOn="{StaticResource menuLabelStyle}">
+        <Setter Property="FontSize" Value="10"></Setter>
+        <Setter Property="FontWeight" Value="Normal"></Setter>
+    </Style>
+    <Style x:Key="menuLabelPriceStyle" TargetType="Label" BasedOn="{StaticResource menuLabelStyleGen}">
+        <Setter Property="FontSize" Value="12"></Setter>
+        <Setter Property="HorizontalContentAlignment" Value="Right"></Setter>
+    </Style>
+    <Style x:Key="topImg" TargetType="Image">
+        <Setter Property="MaxHeight" Value="40"></Setter>
+        <Setter Property="Margin" Value="5"></Setter>
+    </Style>
+</ResourceDictionary>
